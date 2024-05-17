@@ -1,3 +1,5 @@
+import ContactUs from "@/components/ContactUs";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import HelpMeWrite from "@/components/HelpMeWrite";
 import OurSolution from "@/components/OurSolutions";
@@ -20,8 +22,12 @@ export default function Home() {
       <div className="bg-white w-full">
         <Container>
           <HelpMeWrite />
+          <ContactUs />
         </Container>
       </div>
+      <Container>
+        <Footer />
+      </Container>
     </main>
   );
 }

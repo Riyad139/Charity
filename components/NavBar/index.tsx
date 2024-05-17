@@ -17,11 +17,13 @@ export default function NavBar() {
           height={1080}
           alt=""
         />
-        <p>Making trust with blockchain charity</p>
       </div>
+      <p className="text-lg font-bold">Making trust with blockchain charity</p>
       <ul className="flex space-x-7 items-center">
         {NavItem.map((item) => (
-          <li key={item.name}>{item.name}</li>
+          <li key={item.name} className="cursor-pointer">
+            {item.name}
+          </li>
         ))}
         <Button className="bg-[#65E4A3] hover:text-white text-black text-xl">
           Log In
